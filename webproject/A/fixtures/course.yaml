@@ -1,0 +1,6 @@
+- model : A.Course  
+  pk : eng
+  fields :
+     course_id : 1
+     course_name : "Eng"
+     teacher : "PP"

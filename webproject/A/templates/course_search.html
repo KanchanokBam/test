@@ -1,0 +1,12 @@
+<h1> Course Search </h1>
+<form method=" Get ">
+    <input type="text" name="code">
+    <button type="'submit"></button>
+</form>
+<ul>
+{% for course in courses %}
+<li> {{course.course_id}} - {{course.course_name}} - {{course.teacher}} </li>
+<a href="{% url 'course_update' Course_id=course.Course_id %}">update</a>
+<a href="{% url 'course_delete' Course_id=course.Course_id %}">Delete</a>
+{% endfor %}
+</ul>
